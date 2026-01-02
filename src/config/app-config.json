@@ -1,0 +1,36 @@
+{
+  "BRAND": {
+    "NAME": "La Zulianita",
+    "SHORT_NAME": "Zulianita",
+    "TAGLINE": "Sistema ERP",
+    "FOOTER_TEXT": "Sistema de gestión empresarial • La Zulianita © 2025",
+    "LOGO_URL": "/logo-zulianita.jpg",
+    "PRIMARY_TEXT_CLASS": "text-primary",
+    "ACCENT_TEXT_CLASS": "text-accent",
+    "GRADIENT_FROM": "from-primary/20",
+    "GRADIENT_TO": "to-accent/20"
+  },
+  "NAME": "La Zulianita",
+  "VERSION": "1.0.0",
+  "DESCRIPTION": "Sistema de gestión para La Zulianita",
+  "INVENTORY": {
+    "MIN_STOCK_ALERT": 5,
+    "DEFAULT_WEIGHT_UNIT": "kg",
+    "CAPACITY_MULTIPLIER": 1.5,
+    "MIN_CAPACITY_KG": 50000
+  },
+  "DASHBOARD": {
+    "RECENT_SALES_LIMIT": 10,
+    "CHART_MONTHS": 6,
+    "INVENTORY_CATEGORIES_LIMIT": 4
+  },
+  "FORMS": {
+    "DEBOUNCE_DELAY": 300,
+    "MAX_FILE_SIZE": 5242880
+  },
+  "API": {
+    "DEFAULT_TIMEOUT": 30000,
+    "RETRY_ATTEMPTS": 3,
+    "RETRY_DELAY": 1000
+  }
+}
