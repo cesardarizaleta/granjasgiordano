@@ -50,7 +50,10 @@ export function QuickAccess() {
               onClick={openClienteModal}
               title="Nuevo Cliente"
             >
-              <span className="material-symbols-rounded text-neutral-900" style={{ fontSize: "28px" }}>
+              <span
+                className="material-symbols-rounded text-neutral-900"
+                style={{ fontSize: "28px" }}
+              >
                 person_add
               </span>
             </Button>

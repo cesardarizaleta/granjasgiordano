@@ -358,7 +358,7 @@ class GastosService {
   ): Promise<ApiResponse<GastosStatsType>> {
     try {
       // Usar función RPC para estadísticas
-      const { data, error } = await supabase.rpc('get_gastos_estadisticas', {
+      const { data, error } = await supabase.rpc("get_gastos_estadisticas", {
         fecha_desde: fechaDesde || null,
         fecha_hasta: fechaHasta || null,
       });

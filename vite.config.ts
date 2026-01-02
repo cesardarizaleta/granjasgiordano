@@ -64,12 +64,13 @@ export default defineConfig(({ mode }) => ({
         "masked-icon.svg",
         "pwa-192x192.png",
         "pwa-512x512.png",
-        "logo.jpg"
+        "logo.jpg",
       ],
       manifest: {
         name: "Granjas Giordano - Sistema de Gestión",
         short_name: "Granjas Giordano",
-        description: "Sistema ERP para Granjas Giordano: inventario, ventas, clientes y cobranza avícola",
+        description:
+          "Sistema ERP para Granjas Giordano: inventario, ventas, clientes y cobranza avícola",
         theme_color: "#e3162c",
         background_color: "#ffffff",
         display: "standalone",
