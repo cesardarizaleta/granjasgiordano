@@ -1,4 +1,4 @@
-# GitHub Copilot Instructions - Carbon Zulianita
+# GitHub Copilot Instructions - Granjas Giordano
 
 ## 🏗️ Arquitectura del Proyecto
 

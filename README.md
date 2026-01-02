@@ -1,8 +1,8 @@
-# Carbon Zulianita ERP
+# Granjas Giordano ERP
 
 ![Inventario](public/inventory.png)
 
-Una suite completa de gestión empresarial diseñada para pequeñas y medianas empresas. Gestiona inventarios, ventas, clientes y cobranzas de manera eficiente y moderna.
+Suite completa de gestión empresarial para operaciones avícolas y distribución. Gestiona inventarios, ventas, clientes y cobranzas de manera eficiente y moderna.
 
 ## 🚀 Características
 
@@ -35,7 +35,7 @@ Una suite completa de gestión empresarial diseñada para pequeñas y medianas e
 
    ```bash
    git clone <URL_DEL_REPOSITORIO>
-   cd carbon-zulianita-suite
+    cd granjas-giordano-suite
    ```
 
 2. **Instala dependencias**:
@@ -231,4 +231,4 @@ Para preguntas o soporte, contacta al equipo de desarrollo.
 
 ---
 
-¡Gracias por usar Carbon Zulianita Suite! 🚀
+¡Gracias por usar Granjas Giordano Suite! 🚀

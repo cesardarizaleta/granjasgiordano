@@ -67,10 +67,10 @@ export default defineConfig(({ mode }) => ({
         "logo.jpg"
       ],
       manifest: {
-        name: "La Zulianita - Sistema de Gestión",
-        short_name: "La Zulianita",
-        description: "Sistema de gestión integral para La Zulianita - Inventario, Ventas, Clientes y Cobranza",
-        theme_color: "#000000",
+        name: "Granjas Giordano - Sistema de Gestión",
+        short_name: "Granjas Giordano",
+        description: "Sistema ERP para Granjas Giordano: inventario, ventas, clientes y cobranza avícola",
+        theme_color: "#e3162c",
         background_color: "#ffffff",
         display: "standalone",
         orientation: "portrait-primary",
