@@ -30,94 +30,94 @@
 @layer base {
   :root {
     --background: 0 0% 98%;
-    --foreground: 0 0% 8%;
+    --foreground: 0 0% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 0 0% 8%;
+    --card-foreground: 0 0% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 0 0% 8%;
+    --popover-foreground: 0 0% 10%;
 
-    --primary: 50 100% 50%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 353 90% 48%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 96%;
-    --secondary-foreground: 0 0% 8%;
+    --secondary: 46 80% 96%;
+    --secondary-foreground: 26 30% 24%;
 
-    --muted: 0 0% 94%;
-    --muted-foreground: 0 0% 45%;
+    --muted: 46 35% 90%;
+    --muted-foreground: 25 20% 38%;
 
-    --accent: 0 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 47 100% 55%;
+    --accent-foreground: 27 95% 18%;
 
-    --destructive: 0 84% 60%;
+    --destructive: 0 72% 45%;
     --destructive-foreground: 0 0% 100%;
 
     --success: 142 76% 36%;
     --success-foreground: 0 0% 100%;
 
-    --warning: 38 92% 50%;
-    --warning-foreground: 0 0% 8%;
+    --warning: 42 94% 52%;
+    --warning-foreground: 27 95% 18%;
 
-    --border: 0 0% 90%;
-    --input: 0 0% 90%;
-    --ring: 50 100% 50%;
+    --border: 0 0% 88%;
+    --input: 0 0% 88%;
+    --ring: 353 90% 48%;
 
     --radius: 0.75rem;
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 50 100% 50%;
-    --sidebar-primary-foreground: 0 0% 8%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 50 100% 50%;
+    --sidebar-background: 350 80% 18%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 47 100% 55%;
+    --sidebar-primary-foreground: 27 95% 18%;
+    --sidebar-accent: 353 90% 36%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 350 65% 26%;
+    --sidebar-ring: 353 90% 48%;
 
-    --chart-1: 50 100% 50%;
-    --chart-2: 0 85% 55%;
-    --chart-3: 142 76% 36%;
-    --chart-4: 38 92% 50%;
-    --chart-5: 217 91% 60%;
+    --chart-1: 353 90% 48%;
+    --chart-2: 47 100% 55%;
+    --chart-3: 350 70% 38%;
+    --chart-4: 42 94% 52%;
+    --chart-5: 30 15% 35%;
   }
 
   .dark {
-    --background: 0 0% 6%;
-    --foreground: 0 0% 95%;
+    --background: 350 30% 8%;
+    --foreground: 0 0% 96%;
 
-    --card: 0 0% 10%;
-    --card-foreground: 0 0% 95%;
+    --card: 350 28% 12%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 10%;
-    --popover-foreground: 0 0% 95%;
+    --popover: 350 28% 12%;
+    --popover-foreground: 0 0% 96%;
 
-    --primary: 50 100% 50%;
-    --primary-foreground: 0 0% 8%;
+    --primary: 353 86% 60%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 0 0% 15%;
-    --secondary-foreground: 0 0% 95%;
+    --secondary: 350 20% 18%;
+    --secondary-foreground: 0 0% 96%;
 
-    --muted: 0 0% 18%;
-    --muted-foreground: 0 0% 60%;
+    --muted: 350 15% 22%;
+    --muted-foreground: 0 0% 70%;
 
-    --accent: 0 85% 55%;
-    --accent-foreground: 0 0% 100%;
+    --accent: 47 100% 60%;
+    --accent-foreground: 27 95% 18%;
 
-    --destructive: 0 62% 50%;
+    --destructive: 0 70% 52%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
-    --ring: 50 100% 50%;
+    --border: 350 20% 22%;
+    --input: 350 20% 22%;
+    --ring: 353 86% 60%;
 
-    --sidebar-background: 0 0% 5%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 50 100% 50%;
-    --sidebar-primary-foreground: 0 0% 8%;
-    --sidebar-accent: 0 0% 12%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 50 100% 50%;
+    --sidebar-background: 350 70% 12%;
+    --sidebar-foreground: 0 0% 96%;
+    --sidebar-primary: 47 100% 55%;
+    --sidebar-primary-foreground: 27 95% 18%;
+    --sidebar-accent: 353 90% 48%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 350 25% 24%;
+    --sidebar-ring: 353 86% 60%;
   }
 }
 
@@ -147,11 +147,11 @@
   }
 
   .gradient-primary {
-    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(50 100% 40%) 100%);
+    background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(345 88% 40%) 100%);
   }
 
   .gradient-accent {
-    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(0 85% 45%) 100%);
+    background: linear-gradient(135deg, hsl(var(--accent)) 0%, hsl(var(--primary)) 100%);
   }
 
   .animate-glow {

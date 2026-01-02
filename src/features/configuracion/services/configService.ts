@@ -13,10 +13,10 @@ class ConfigService {
       const mockData: ConfiguracionEmpresa = {
         id: "1",
         user_id: userId,
-        nombre_empresa: "Carbón La Zulianita",
+        nombre_empresa: "Granjas Giordano",
         rif_nit: "J-123456789",
         telefono: "+58 412 123 4567",
-        email: "info@lazulianita.com",
+        email: "info@granjasgiordano.com",
         direccion: "Av. Principal, Ciudad Bolívar, Venezuela",
         logo_url: "/logo.jpg",
       };
@@ -36,10 +36,10 @@ class ConfigService {
       const updatedData: ConfiguracionEmpresa = {
         id: "1",
         user_id: config.user_id || "",
-        nombre_empresa: config.nombre_empresa || "Carbón La Zulianita",
+        nombre_empresa: config.nombre_empresa || "Granjas Giordano",
         rif_nit: config.rif_nit || "J-123456789",
         telefono: config.telefono || "+58 412 123 4567",
-        email: config.email || "info@lazulianita.com",
+        email: config.email || "info@granjasgiordano.com",
         direccion: config.direccion || "Av. Principal, Ciudad Bolívar, Venezuela",
         logo_url: config.logo_url || "/logo.jpg",
       };

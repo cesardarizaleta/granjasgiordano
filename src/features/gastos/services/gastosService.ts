@@ -357,65 +357,19 @@ class GastosService {
     fechaHasta?: string
   ): Promise<ApiResponse<GastosStatsType>> {
     try {
-      let baseFilters = supabase.from("gastos");
-      if (fechaDesde) {
-        baseFilters = baseFilters.gte("fecha_gasto", fechaDesde);
-      }
-      if (fechaHasta) {
-        baseFilters = baseFilters.lte("fecha_gasto", fechaHasta);
-      }
-
-      // Total acumulado
-      const totalPromise = baseFilters.select("sum:monto").single();
-
-      // Totales por categoría y estado en una sola pasada agregada
-      const groupedPromise = baseFilters.select("categoria, estado, sum:monto, count:estado");
-
-      const [totalResult, groupedResult] = await Promise.all([totalPromise, groupedPromise]);
-
-      if (totalResult.error) {
-        console.error("Error fetching total estadísticas:", totalResult.error);
-        return { data: null, error: totalResult.error.message };
-      }
-
-      if (groupedResult.error) {
-        console.error("Error fetching grouped estadísticas:", groupedResult.error);
-        return { data: null, error: groupedResult.error.message };
-      }
-
-      const stats: GastosStatsType = {
-        total_mes: (totalResult.data as any)?.sum || 0,
-        total_categoria: {
-          operativos: 0,
-          administrativos: 0,
-          mantenimiento: 0,
-          transporte: 0,
-          suministros: 0,
-          servicios_publicos: 0,
-          marketing: 0,
-          salarios: 0,
-          impuestos: 0,
-          otros: 0,
-        },
-        gastos_pendientes: 0,
-        gastos_aprobados: 0,
-      };
-
-      (groupedResult.data || []).forEach(row => {
-        const categoria = (row as any).categoria as CategoriaGasto;
-        const estado = (row as any).estado as EstadoGasto;
-        const subtotal = (row as any).sum || 0;
-        const totalFilas = Number((row as any).count || 0);
-
-        if (categoria && categoria in stats.total_categoria) {
-          stats.total_categoria[categoria] += subtotal;
-        }
-
-        if (estado === "pendiente") stats.gastos_pendientes += totalFilas;
-        if (estado === "aprobado") stats.gastos_aprobados += totalFilas;
+      // Usar función RPC para estadísticas
+      const { data, error } = await supabase.rpc('get_gastos_estadisticas', {
+        fecha_desde: fechaDesde || null,
+        fecha_hasta: fechaHasta || null,
       });
 
-      return { data: stats, error: null };
+      if (error) {
+        console.error("Error fetching estadísticas:", error);
+        return { data: null, error: error.message };
+      }
+
+      // El RPC devuelve directamente el objeto de estadísticas
+      return { data: data as GastosStatsType, error: null };
     } catch (err) {
       console.error("Error in getEstadisticas:", err);
       return { data: null, error: "Error al obtener estadísticas" };

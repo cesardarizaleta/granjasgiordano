@@ -16,7 +16,7 @@ import {
 import { useAuth } from "@/hooks/useAuth";
 import { cn } from "@/lib/utils";
 import { APP_CONFIG } from "@/constants";
-import logoZulianita from "@/assets/logo-zulianita.jpg";
+import logoGranjasGiordano from "@/assets/granjasgiordano.jpg";
 
 const menuItems = [
   { icon: LayoutDashboard, label: "Dashboard", path: "/" },
@@ -40,7 +40,8 @@ export function Sidebar({ onClose }: SidebarProps) {
   const { user, signOut } = useAuth();
 
   const brandLogo = APP_CONFIG.BRAND.LOGO_URL;
-  const logoSrc = brandLogo && brandLogo !== "/logo-zulianita.jpg" ? brandLogo : logoZulianita;
+  const logoSrc =
+    brandLogo && brandLogo !== "/granjasgiordano.jpg" ? brandLogo : logoGranjasGiordano;
   const brandName = APP_CONFIG.BRAND.NAME || APP_CONFIG.NAME;
   const brandTagline = APP_CONFIG.BRAND.TAGLINE || "Sistema ERP";
 

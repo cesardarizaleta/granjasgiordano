@@ -7,13 +7,15 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Eye, EyeOff, LogIn, AlertCircle } from "lucide-react";
 import { useAuth } from "@/hooks/useAuth";
-import logoZulianita from "@/assets/logo-zulianita.jpg";
+import logoGranjasGiordano from "@/assets/granjasgiordano.jpg";
 import { APP_CONFIG } from "@/constants";
 
 const Login = () => {
   const brand = APP_CONFIG.BRAND;
   const logoSrc =
-    brand.LOGO_URL && brand.LOGO_URL !== "/logo-zulianita.jpg" ? brand.LOGO_URL : logoZulianita;
+    brand.LOGO_URL && brand.LOGO_URL !== "/granjasgiordano.jpg"
+      ? brand.LOGO_URL
+      : logoGranjasGiordano;
   const brandName = brand.NAME || APP_CONFIG.NAME;
   const brandTagline = brand.TAGLINE || "Sistema ERP";
   const footerText = brand.FOOTER_TEXT || `Sistema de gestión • ${brandName}`;
@@ -96,7 +98,7 @@ const Login = () => {
                 id="email"
                 name="email"
                 type="email"
-                placeholder="usuario@lazulianita.com"
+                placeholder="usuario@granjasgiordano.com"
                 required
                 className="h-11"
                 value={email}

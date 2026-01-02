@@ -50,7 +50,7 @@ export function QuickAccess() {
               onClick={openClienteModal}
               title="Nuevo Cliente"
             >
-              <span className="material-symbols-rounded" style={{ fontSize: "28px" }}>
+              <span className="material-symbols-rounded text-neutral-900" style={{ fontSize: "28px" }}>
                 person_add
               </span>
             </Button>
@@ -64,7 +64,7 @@ export function QuickAccess() {
           onClick={toggleMenu}
         >
           <span
-            className={`material-symbols-rounded transition-transform duration-300 ${!isMenuOpen ? "rotate-45" : ""}`}
+            className={`material-symbols-rounded transition-transform duration-300 text-neutral-900 ${!isMenuOpen ? "rotate-45" : ""}`}
             style={{ fontSize: "36px" }}
           >
             close

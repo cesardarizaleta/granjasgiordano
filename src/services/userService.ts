@@ -21,19 +21,19 @@ class UserService {
           const mockUsers: Usuario[] = [
             {
               id: "1",
-              email: "admin@lazulianita.com",
+              email: "admin@granjasgiordano.com",
               nombre: "Administrador",
               role: "admin",
             },
             {
               id: "2",
-              email: "ventas@lazulianita.com",
+              email: "ventas@granjasgiordano.com",
               nombre: "Vendedor Principal",
               role: "vendedor",
             },
             {
               id: "3",
-              email: "cobranza@lazulianita.com",
+              email: "cobranza@granjasgiordano.com",
               nombre: "Cobrador",
               role: "cobrador",
             },
@@ -174,19 +174,19 @@ class UserService {
           const mockUsers: Usuario[] = [
             {
               id: "1",
-              email: "admin@lazulianita.com",
+              email: "admin@granjasgiordano.com",
               nombre: "Administrador",
               role: "admin",
             },
             {
               id: "2",
-              email: "ventas@lazulianita.com",
+              email: "ventas@granjasgiordano.com",
               nombre: "Vendedor Principal",
               role: "vendedor",
             },
             {
               id: "3",
-              email: "cobranza@lazulianita.com",
+              email: "cobranza@granjasgiordano.com",
               nombre: "Cobrador",
               role: "cobrador",
             },
